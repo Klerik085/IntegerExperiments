@@ -1,12 +1,7 @@
-import java.lang.reflect.Array;
-
 public class Main
 {
     public static void main(String[] args) {
-//        Container container = new Container();
-//        container.count += 7843;
-        System.out.println(sumDigits(1111));
-
+        System.out.println(sumDigits(3311));
     }
 
     public static Integer sumDigits(Integer number) {
