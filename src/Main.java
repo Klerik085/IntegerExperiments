@@ -1,21 +1,22 @@
+import java.lang.reflect.Array;
+
 public class Main
 {
-    public static void main(String[] args)
-    {
-        Container container = new Container();
-        container.count += 7843;
-        int sum = 0;
+    public static void main(String[] args) {
+//        Container container = new Container();
+//        container.count += 7843;
+        System.out.println(sumDigits(1111));
 
     }
 
-    public Integer sumDigits(Integer number)
-    {
-        Integer.toString(number);
-        this.sum = number;
-
-
-
-        return 0;
+    public static Integer sumDigits(Integer number) {
+        String numStr = Integer.toString(number);
+        char[] chars = numStr.toCharArray();
+        int sum = 0;
+        for (int i = 0; i < chars.length; i++) {
+            sum = sum + Character.getNumericValue(chars[i]);
+        }
+        return sum;
     }
 }
 
